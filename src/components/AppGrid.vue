@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <ul>
-      <li v-for="(elemento,index) in elementGrid" :key='index'>
-        <img :src="elemento.immagine" :alt="elemento.testo">
+ <div class="bg-grid">
+    <ul class='row'>
+      <li class='column' v-for="(elemento,index) in elementGrid" :key='index'>
+        <img class='size-grid' :src="elemento.immagine" :alt="elemento.testo">
+        <span class="primary-color">{{elemento.testo}}</span>
       </li>
     </ul>
-  </div>
+ </div>
+    
 </template>
 
 <script>
@@ -44,4 +46,31 @@ export default {
 <style scoped lang="scss">
 @import '../style/variables';
 
+.bg-grid{
+  background-color: $dc-color;
+   @include primary-color;
+   @include container;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding:70px;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.size-grid{
+  width: 50%;
+}
+span{
+  align-self: center;
+}
 </style>

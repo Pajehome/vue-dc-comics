@@ -1,5 +1,5 @@
 <template>
-  <div class="content">	&rarr; Content goes here &larr;</div>
+  <div class="content primary-color">	&rarr; Content goes here &larr;</div>
 </template>
 
 <script>
@@ -15,8 +15,9 @@ export default {
 .content{
     @include container;
     background: $aboveNav-color;
-    padding: $padding;
-    color: $primary-text
+    padding: $padding;   
+    @include primary-color;
 }
+
 
 </style>

@@ -2,7 +2,7 @@ $aboveNav-color: #0E0E0E;
 $logo-size: 4%; 
 $dc-color: #0282F9;
 $padding: 30px;
-$primary-text: white;
+
 
 @mixin container {
     padding-right: 100px !important;
@@ -23,4 +23,8 @@ $primary-text: white;
     display:inline-block;
     margin: 0px 15px ;
     padding-bottom: 19px;
+}
+
+@mixin primary-color{
+    color: white;
 }
