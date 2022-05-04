@@ -2,7 +2,7 @@ $aboveNav-color: #0E0E0E;
 $logo-size: 4%; 
 $dc-color: #0282F9;
 $padding: 30px;
-
+$footer-text: #959595;
 
 @mixin container {
     padding-right: 100px !important;
@@ -14,9 +14,10 @@ $padding: 30px;
 @mixin nav-ul {
     float: right;
     text-align: center;
-    padding: 16px 16px 0px;
+    padding: 13px 16px 0px;
     text-decoration: none;
     font-size: 12px;
+    
 }
 
 @mixin nav-li{

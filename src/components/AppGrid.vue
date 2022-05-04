@@ -56,10 +56,10 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding:70px;
+  padding:50px 0px;
   width: 100%;
   justify-content: center;
-  gap: 50px;
+  gap: 17px;
 }
 
 .column {
@@ -68,9 +68,12 @@ export default {
   align-self: center;
 }
 .size-grid{
-  width: 50%;
+  width: 25%;
 }
 span{
   align-self: center;
+  padding-left: 8px;
+  width: 185px;
+  font-size: 11px;
 }
 </style>

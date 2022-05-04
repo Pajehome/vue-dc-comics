@@ -4,4 +4,12 @@
         padding: 0;
         box-sizing: border-box;
     }  
-
+body{
+    min-width: 1200px;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.d-block{
+    display: block;
+}
