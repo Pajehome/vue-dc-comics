@@ -3,6 +3,7 @@
     <AppHeader/>
     <main>
        <AppContent/>
+       <AppCards/>
        <AppGrid/>
     </main>
     <AppFooter/>
@@ -12,8 +13,10 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppContent from './components/AppContent.vue'
+import AppCards from './components/AppCards.vue'
 import AppGrid from './components/AppGrid.vue'
 import AppFooter from './components/AppFooter.vue'
+
 
 
 export default {
@@ -21,6 +24,7 @@ export default {
   components: {
     AppHeader,
     AppContent,
+    AppCards,
     AppGrid,
     AppFooter,
   }

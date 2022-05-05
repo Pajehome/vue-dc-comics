@@ -190,7 +190,7 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 50px 0px;
+  padding: 50px 0px 3px;
   width: 100%;
   gap: 0px;
 }
