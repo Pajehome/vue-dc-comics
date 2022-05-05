@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'ProductCard',
+    name: 'CardsSeries',
     props: ['immagine','titolo'],
 }
 </script>
@@ -17,10 +17,13 @@ export default {
 .prod-card {
 	flex-basis: 25%;
 	padding: 20px;
-	background-color: white;
-	
+    @include primary-color;
 	img {
 		display: block;
+        width: 200px;
+        height: 205px;
+        object-fit: cover;
+        object-position: top;
 	}
 }
 </style>

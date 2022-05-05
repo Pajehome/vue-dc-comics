@@ -1,17 +1,19 @@
 <template>
   <section class="cards">
     <div class="boxes container">
-      <Cards v-for="(card, index) in seriesDc" :key="index" :immagine="card.thumb" :titolo="card.series" />
+      <CardsSeries v-for="(card, index) in seriesDc" :key="index" :immagine="card.thumb" :titolo="card.series" />
     </div>
   </section>
 </template>
 
 <script>
-import Cards from "./Cards.vue";
+import CardsSeries from './CardsSeries.vue';
+
 export default {
+  components: { CardsSeries },
   name: "AppCards",
   component: {
-    Cards,
+    CardsSeries,
   },
   data() {
     return {
@@ -114,6 +116,7 @@ export default {
   background: rgb(37, 37, 37);
   h1 {
     font-weight: 600;
+    color: white;
   }
   .boxes {
     @include container;
@@ -121,11 +124,6 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap:30px;
-  }
-  Cards{
-    height: 100px;
-    width: 135px;
-    background: aquamarine
   }
 }
 </style>
