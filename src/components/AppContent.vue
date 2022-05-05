@@ -1,5 +1,7 @@
 <template>
-  <div class="content primary-color">	&rarr; Content goes here &larr;</div>
+  <div class="jumbotron">
+   <button>CURRENT SERIES</button>
+  </div>
 </template>
 
 <script>
@@ -12,11 +14,15 @@ export default {
 <style scoped lang="scss">
 @import '../style/variables';
 
-.content{
-    @include container;
-    background: $aboveNav-color;
-    padding: $padding;   
-    @include primary-color;
+.jumbotron{
+  background-image: url(../assets/img/jumbotron.jpg);
+  height: 250px;
+  background-size: cover;
+  position: relative;
+    
+    button{
+      @include current-series;
+    }
 }
 
 

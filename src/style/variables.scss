@@ -29,3 +29,15 @@ $footer-text: #959595;
 @mixin primary-color{
     color: white;
 }
+
+@mixin current-series{
+    background: $dc-color;
+    @include primary-color;
+    padding: 7px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -17px;
+    left: 100px;
+    border: 1px solid $dc-color;
+}
