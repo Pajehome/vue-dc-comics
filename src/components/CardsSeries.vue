@@ -15,15 +15,21 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables";
 .prod-card {
-	flex-basis: 25%;
-	padding: 20px;
+	flex-basis: 16%;
+	padding: 20px 0px;
     @include primary-color;
 	img {
 		display: block;
-        width: 200px;
-        height: 205px;
+        width: 140px;
+        height: 140px;
         object-fit: cover;
         object-position: top;
 	}
+    h3{
+    padding-top: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: $font-primary;
+    }
 }
 </style>

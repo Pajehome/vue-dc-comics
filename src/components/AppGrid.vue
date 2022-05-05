@@ -74,6 +74,6 @@ span{
   align-self: center;
   padding-left: 8px;
   width: 185px;
-  font-size: 11px;
+  font-size: $font-primary;
 }
 </style>

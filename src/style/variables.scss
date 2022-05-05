@@ -3,6 +3,7 @@ $logo-size: 4%;
 $dc-color: #0282F9;
 $padding: 30px;
 $footer-text: #959595;
+$font-primary: 12px;
 
 @mixin container {
     padding-right: 100px !important;
@@ -16,7 +17,7 @@ $footer-text: #959595;
     text-align: center;
     padding: 13px 16px 0px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: $font-primary;
     
 }
 

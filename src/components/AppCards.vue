@@ -3,6 +3,10 @@
     <div class="boxes container">
       <CardsSeries v-for="(card, index) in seriesDc" :key="index" :immagine="card.thumb" :titolo="card.series" />
     </div>
+    <div class="center-button">
+        <button>LOAD MORE</button>
+    </div>
+    
   </section>
 </template>
 
@@ -112,18 +116,26 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables";
 .cards {
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 1rem;
   background: rgb(37, 37, 37);
-  h1 {
-    font-weight: 600;
-    color: white;
-  }
+  
+
   .boxes {
     @include container;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap:7px;
+  }
+  .center-button{
+      display: flex;
+      justify-content: center;
+      button{
+       background-color: $dc-color;
+       @include primary-color;
+       padding: 5px 20px;
+       font-size: $font-primary;
+      }
   }
 }
 </style>
