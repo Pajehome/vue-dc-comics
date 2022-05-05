@@ -116,9 +116,16 @@ export default {
     font-weight: 600;
   }
   .boxes {
+    @include container;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    gap:30px;
+  }
+  Cards{
+    height: 100px;
+    width: 135px;
+    background: aquamarine
   }
 }
 </style>
