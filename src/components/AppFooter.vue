@@ -184,13 +184,14 @@ export default {
   @include primary-color;
   @include container;
   background-image: url(../assets/img/footer-bg.jpg);
+  background-size: cover;
   width: 100%;
 }
 .row-f {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 50px 0px 3px;
+  padding: 50px 0px 1px;
   width: 100%;
   gap: 0px;
 }
